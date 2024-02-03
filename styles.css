@@ -3,7 +3,6 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    overflow: hidden;
     padding: 0;
 }
 
@@ -11,7 +10,7 @@ body {
     background-color: #777;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin: 100px auto;
+    margin: 90px auto;
     padding: 20px;
     text-align: center;
     width: 280px;
@@ -78,6 +77,6 @@ body {
 
 @media screen and (max-width: 500px) {
     .contenedor-calculadora {
-        margin: 120px auto;
+        margin: 130px auto;
     }
 }
