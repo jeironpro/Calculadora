@@ -27,6 +27,7 @@ body {
     font-size: 18px;
     height: 50px;
     margin: 8px;
+    text-align: center;
     width: 50px;
 }
 
@@ -74,7 +75,6 @@ body {
 .igual:hover {
     background-color: #fcc257;
 }
-
 
 @media screen and (max-width: 500px) {
     .contenedor-calculadora {
