@@ -1,0 +1,86 @@
+body {
+    background-color: rgba(173, 210, 255, 1);
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.contenedor-calculadora {
+    background-color: #777;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 90px auto;
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+}
+
+.botones button {
+    border: none;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    height: 50px;
+    margin: 8px;
+    width: 50px;
+}
+
+.calculo {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 5px 5px 5px 0;
+    text-align: right;
+    width: 100%;
+}
+
+.calculo:focus {
+    outline: 1px solid #000;
+}
+
+.background-arriba {
+    background-color: #a7a7a7; 
+}
+
+.background-arriba:hover {
+    background-color: #cac9c9;
+}
+
+.numeroshov:hover {
+    background-color: #979595;
+}
+
+.botones .cero {
+    background-color: #4e4949;
+    border-radius: 10%;
+    width: 120px;
+}
+
+.botones .cero:hover {
+    background-color: #979595;
+}
+
+.background-derecha {
+    background-color: #ffa600;
+}
+
+.seleccionado {
+    background-color: #fcc257;
+}
+
+.numeroshov {
+    background-color: #4e4949;
+}
+
+.igual:hover {
+    background-color: #fcc257;
+}

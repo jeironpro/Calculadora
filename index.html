@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="icon" href="img/calculadora.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-calculadora">
+        <input type="text" placeholder="0" id="calculo" class="calculo"
+        readonly>
+        <div class="botones">
+            <button onclick="limpiar()" class="background-arriba" style="color: #000;">C</button>
+
+            <button onclick="operadorSeleccionado('√')" data-operador="√" class="boton-operador background-arriba" style="color: #000;">√</button>
+
+            <button onclick="operadorSeleccionado('%')" data-operador="%" class="boton-operador background-arriba" style="color: #000;">%</button>
+
+            <button onclick="operadorSeleccionado('/')" data-operador="/" class="boton-operador background-derecha" style="font-size: larger;">&divide;</button>
+
+            <button onclick="datosCalculo('7')" class="numeroshov">7</button>
+
+            <button onclick="datosCalculo('8')" class="numeroshov">8</button>
+
+            <button onclick="datosCalculo('9')" class="numeroshov">9</button>
+
+            <button onclick="operadorSeleccionado('*')" data-operador="*" class="boton-operador background-derecha">x</button>
+
+            <button onclick="datosCalculo('4')" class="numeroshov">4</button>
+
+            <button onclick="datosCalculo('5')" class="numeroshov">5</button>
+
+            <button onclick="datosCalculo('6')" class="numeroshov">6</button>
+
+            <button onclick="operadorSeleccionado('-')" data-operador="-" class="boton-operador background-derecha">-</button>
+
+            <button onclick="datosCalculo('1')" class="numeroshov">1</button>
+
+            <button onclick="datosCalculo('2')" class="numeroshov">2</button>
+
+            <button onclick="datosCalculo('3')" class="numeroshov">3</button>
+
+            <button onclick="operadorSeleccionado('+')" data-operador="+" class="boton-operador background-derecha">+</button>
+
+            <button onclick="datosCalculo('0')" class="cero">0</button>
+
+            <button onclick="datosCalculo('.')" class="numeroshov">.</button>
+
+            <button onclick="calcular()" class="background-derecha igual">=</button>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
