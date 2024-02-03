@@ -59,16 +59,6 @@ body {
     background-color: #979595;
 }
 
-.botones .cero {
-    background-color: #4e4949;
-    border-radius: 10%;
-    width: 120px;
-}
-
-.botones .cero:hover {
-    background-color: #979595;
-}
-
 .background-derecha {
     background-color: #ffa600;
 }
@@ -88,6 +78,6 @@ body {
 
 @media screen and (max-width: 500px) {
     .contenedor-calculadora {
-        margin: 120px auto;
+        margin: 150px auto;
     }
 }

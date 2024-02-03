@@ -53,7 +53,12 @@ function calcular() {
     operadorSeleccion = false;    
 }
 
-function limpiar() { 
+function limpiar() {
+    let valorActual = datosMostrar.value;
+    datosMostrar.value = valorActual.slice(0, -1)
+}
+
+function limpiarTodo() { 
     datosMostrar.value = ''; 
     operador = '';
     primerosNumeros = '';

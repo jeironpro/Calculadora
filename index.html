@@ -13,13 +13,13 @@
         <input type="text" placeholder="0" id="calculo" class="calculo"
         readonly>
         <div class="botones">
-            <button onclick="limpiar()" class="background-arriba" style="color: #000;">C</button>
+            <button onclick="limpiarTodo()" class="background-arriba" style="color: #000;">CA</button>
 
-            <button onclick="operadorSeleccionado('√')" data-operador="√" class="boton-operador background-arriba" style="color: #000;">√</button>
+            <button onclick="limpiar()" class="background-arriba" style="color: #000;">C</button>
 
             <button onclick="operadorSeleccionado('%')" data-operador="%" class="boton-operador background-arriba" style="color: #000;">%</button>
 
-            <button onclick="operadorSeleccionado('/')" data-operador="/" class="boton-operador background-derecha" style="font-size: larger;">&divide;</button>
+            <button onclick="operadorSeleccionado('√')" data-operador="√" class="boton-operador background-arriba" style="color: #000;">√</button>
 
             <button onclick="datosCalculo('7')" class="numeroshov">7</button>
 
@@ -27,7 +27,7 @@
 
             <button onclick="datosCalculo('9')" class="numeroshov">9</button>
 
-            <button onclick="operadorSeleccionado('*')" data-operador="*" class="boton-operador background-derecha">x</button>
+            <button onclick="operadorSeleccionado('/')" data-operador="/" class="boton-operador background-derecha" style="font-size: larger;">&divide;</button>
 
             <button onclick="datosCalculo('4')" class="numeroshov">4</button>
 
@@ -35,7 +35,7 @@
 
             <button onclick="datosCalculo('6')" class="numeroshov">6</button>
 
-            <button onclick="operadorSeleccionado('-')" data-operador="-" class="boton-operador background-derecha">-</button>
+            <button onclick="operadorSeleccionado('*')" data-operador="*" class="boton-operador background-derecha">x</button>
 
             <button onclick="datosCalculo('1')" class="numeroshov">1</button>
 
@@ -43,13 +43,15 @@
 
             <button onclick="datosCalculo('3')" class="numeroshov">3</button>
 
-            <button onclick="operadorSeleccionado('+')" data-operador="+" class="boton-operador background-derecha">+</button>
+            <button onclick="operadorSeleccionado('-')" data-operador="-" class="boton-operador background-derecha">-</button>
 
-            <button onclick="datosCalculo('0')" class="cero">0</button>
-
+            <button onclick="datosCalculo('0')" class="numeroshov">0</button>
+            
             <button onclick="datosCalculo('.')" class="numeroshov">.</button>
-
+            
             <button onclick="calcular()" class="background-derecha igual">=</button>
+
+            <button onclick="operadorSeleccionado('+')" data-operador="+" class="boton-operador background-derecha">+</button>
 
         </div>
     </div>
