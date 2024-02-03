@@ -6,12 +6,17 @@ let operadorSeleccion = false;
 
 function datosCalculo(value) { 
     if (operador === '') {
-        primerosNumeros += value;
-        if (operadorSeleccion) { 
-            datosMostrar.value = '';
-            operadorSeleccion = false;
+        if (value === '-' && primerosNumeros === '') {
+            primerosNumeros += value;
+            datosMostrar.value += value;
+        } else {
+            primerosNumeros += value;
+            if (operadorSeleccion) { 
+                datosMostrar.value = '';
+                operadorSeleccion = false;
+            }
+            datosMostrar.value += value; 
         }
-        datosMostrar.value += value; 
     } else {
         segundosNumeros += value;
         datosMostrar.value = '';
