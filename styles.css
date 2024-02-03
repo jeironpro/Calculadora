@@ -76,7 +76,15 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        overflow: hidden;
+    }
+    
     .contenedor-calculadora {
-        margin: 130px auto;
+        margin: 150px auto;
+    }
+
+    .botones button .centrar {
+        margin: -5px;
     }
 }
