@@ -84,3 +84,10 @@ body {
 .igual:hover {
     background-color: #fcc257;
 }
+
+
+@media screen and (max-width: 500px) {
+    .contenedor-calculadora {
+        margin: 110px auto;
+    }
+}
