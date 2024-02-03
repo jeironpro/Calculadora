@@ -6,7 +6,12 @@ let operadorSeleccion = false;
 
 function datosCalculo(value) { 
     if (operador === '') {
-        if (value === '-' && primerosNumeros === '') {
+        if (primerosNumeros === '' && value === '.') {
+            primerosNumeros += '0.';
+            datosMostrar.value += '0.';
+        } else if (primerosNumeros === '' && value === '0') {
+            return;
+        } else if (value === '-' && primerosNumeros === '') {
             primerosNumeros += value;
             datosMostrar.value += value;
         } else {
@@ -18,6 +23,11 @@ function datosCalculo(value) {
             datosMostrar.value += value; 
         }
     } else {
+        if (segundosNumeros === '' && value === '.') {
+            segundosNumeros += '0';
+        } else if (segundosNumeros === '0' && value !== '.') {
+            segundosNumeros = '';
+        }
         segundosNumeros += value;
         datosMostrar.value = '';
     }
