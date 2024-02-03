@@ -20,6 +20,10 @@ function datosCalculo(value) {
 } 
 
 function operadorSeleccionado(operadorCalculo) { 
+    if (segundosNumeros !== '') {
+        calcular();
+    }
+    
     operador = operadorCalculo; 
     operadorSeleccion = true;
 
